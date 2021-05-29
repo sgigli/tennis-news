@@ -1,0 +1,20 @@
+.card.sign-container
+  h2.sign-title Log in
+
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .field
+      = f.email_field :email, autofocus: true, placeholder: "Email", autocomplete: "email", class: "sign-field"
+
+    .field
+      = f.password_field :password, placeholder: "Password", autocomplete: "current-password", class: "sign-field"
+    - if devise_mapping.rememberable?
+      .field
+        = f.check_box :remember_me
+        = f.label :remember_me, class: "ml-1"
+
+    .actions.mt-10
+      = f.submit "Log in", class: "btn btn-success w-50"
+
+    .sign-border
+
+  = render "devise/shared/links"

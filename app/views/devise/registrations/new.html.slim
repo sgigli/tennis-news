@@ -1,0 +1,27 @@
+.card.sign-container
+  h2.sign-title Sign up
+
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+
+    .field
+      = f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Name", class: "sign-field"
+
+    .field
+      = f.email_field :email, autocomplete: "email", placeholder: "Email", class: "sign-field"
+
+    .field
+      = f.password_field :password, autocomplete: "new-password", placeholder: "New Password", class: "sign-field"
+      - if @minimum_password_length
+        em[style="display: block;"]
+          = " (#{@minimum_password_length} characters minimum)"
+
+    .field
+      = f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: "sign-field"
+
+    .actions
+      = f.submit "Sign up", class: "btn btn-success w-50"
+
+    .sign-border
+
+  = render "devise/shared/links"
