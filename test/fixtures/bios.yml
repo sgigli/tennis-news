@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  birth_place: MyString
+  age: 1
+  birthday: 2021-06-14
+  mother: MyString
+  father: MyString
+  residence: MyString
+  player: one
+
+two:
+  birth_place: MyString
+  age: 1
+  birthday: 2021-06-14
+  mother: MyString
+  father: MyString
+  residence: MyString
+  player: two

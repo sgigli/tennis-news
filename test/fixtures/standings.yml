@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ranking: 1
+  points: 1
+  stats: one
+  stats_type: Stats
+
+two:
+  ranking: 1
+  points: 1
+  stats: two
+  stats_type: Stats
