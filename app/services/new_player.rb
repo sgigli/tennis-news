@@ -17,9 +17,7 @@ class NewPlayer
     player.create_playing_style(racquet_hand: @racquet_hand, backhand: @backhand)
     player.create_bio(birthplace: @birthplace, age: @age, birthday: @birthday, mother: @mother, father: @father, residence: @residence)
     player.create_singles_stats(ranking: @singles_ranking, points: @singles_points, career_titles: @career_singles_titles, career_record: @career_singles_record)
-    player.singles_stats.standings.create(ranking: @singles_ranking, points: @singles_points, date: @ranking_date, current: @current_ranking)
     player.create_doubles_stats(ranking: @doubles_ranking, points: @doubles_points, career_titles: @career_doubles_titles, career_record: @career_doubles_record)
-    player.doubles_stats.standings.create(ranking: @doubles_ranking, points: @doubles_points, date: @ranking_date, current: @current_ranking)
 
   end
 end

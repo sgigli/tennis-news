@@ -88,18 +88,6 @@ ActiveRecord::Schema.define(version: 2021_06_15_163227) do
     t.index ["player_id"], name: "index_sizes_on_player_id"
   end
 
-  create_table "standings", force: :cascade do |t|
-    t.integer "ranking"
-    t.integer "points"
-    t.date "date"
-    t.string "stats_type"
-    t.integer "stats_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean "current", default: false
-    t.index ["stats_type", "stats_id"], name: "index_standings_on_stats_type_and_stats_id"
-  end
-
   create_table "teams", force: :cascade do |t|
     t.integer "player_id"
     t.datetime "created_at", null: false
