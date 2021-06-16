@@ -4,7 +4,7 @@ class CreateSinglesStats < ActiveRecord::Migration[5.2]
       t.integer :ranking
       t.integer :points
       t.integer :career_titles
-      t.integer :career_record
+      t.string :career_record
       t.references :player, foreign_key: true
 
       t.timestamps

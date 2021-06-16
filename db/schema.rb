@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_163227) do
     t.integer "ranking"
     t.integer "points"
     t.integer "career_titles"
-    t.integer "career_record"
+    t.string "career_record"
     t.integer "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_163227) do
     t.integer "ranking"
     t.integer "points"
     t.integer "career_titles"
-    t.integer "career_record"
+    t.string "career_record"
     t.integer "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
