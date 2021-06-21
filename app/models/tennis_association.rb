@@ -1,0 +1,2 @@
+class TennisAssociation < ApplicationRecord
+end

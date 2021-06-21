@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_200719) do
+ActiveRecord::Schema.define(version: 2021_06_21_174242) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -90,7 +90,9 @@ ActiveRecord::Schema.define(version: 2021_06_18_200719) do
     t.string "first_name"
     t.string "last_name"
     t.integer "country_id"
+    t.integer "tennis_association_id"
     t.index ["country_id"], name: "index_players_on_country_id"
+    t.index ["tennis_association_id"], name: "index_players_on_tennis_association_id"
   end
 
   create_table "playing_styles", force: :cascade do |t|
@@ -128,6 +130,13 @@ ActiveRecord::Schema.define(version: 2021_06_18_200719) do
     t.datetime "updated_at", null: false
     t.string "coach", default: "--- []\n"
     t.index ["player_id"], name: "index_teams_on_player_id"
+  end
+
+  create_table "tennis_associations", force: :cascade do |t|
+    t.string "name"
+    t.string "acronym"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

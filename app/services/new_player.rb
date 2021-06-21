@@ -9,6 +9,7 @@ class NewPlayer
   def create
     player = Player.new(first_name: @first_name, last_name: @last_name)
     player.country = Country.find_or_create_by(name: @country)
+    player.tennis_association = TennisAssociation.find_or_create_by(name: @association_name, acronym: @association_acronym)
     player.save!
 
     player.create_team(coach: @coach)

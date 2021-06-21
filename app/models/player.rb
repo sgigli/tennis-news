@@ -1,5 +1,6 @@
 class Player < ApplicationRecord
   belongs_to :country, optional: true
+  belongs_to :tennis_association, optional: true
 
   has_one :team, dependent: :destroy
   has_one :size, dependent: :destroy
