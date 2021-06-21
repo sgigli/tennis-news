@@ -1,7 +1,5 @@
 .row
   .col
-    - @atp_players.each do |player|
-      h1 = player.last_name
+    = render "players/player_cards", players: @atp_players
   .col
-    - @wta_players.each do |player|
-      h1 = player.last_name
+    = render "players/player_cards", players: @wta_players         

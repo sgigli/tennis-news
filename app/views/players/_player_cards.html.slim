@@ -1,0 +1,8 @@
+- players.each do |player|
+  .card
+    .row
+      .col-3
+        | Pic
+      .col-9
+        h3 = player.full_name
+        h6 = player.country.name
