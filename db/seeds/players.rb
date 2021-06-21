@@ -5,7 +5,7 @@ djokovic = {
   singles_ranking: 1,
   singles_points: 5170,
   association_name: "Association of Tennis Professionals",
-  association_acroynm: "ATP",
+  association_acronym: "ATP",
   career_singles_record: "961/195",
   career_singles_titles: 84,
   doubles_ranking: 219,
