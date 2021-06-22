@@ -8,6 +8,9 @@ class Player < ApplicationRecord
   has_one :playing_style, dependent: :destroy
   has_one :bio, dependent: :destroy
   has_one :singles_stats, dependent: :destroy
+  has_many :singles_matches, ->(player) { 
+    unscope(where: :player_id).where("player_1_id = ? OR player_2_id = ?", player.id, player.id)
+  }, dependent: :destroy
   has_one :doubles_stats, dependent: :destroy
 
   def overview
