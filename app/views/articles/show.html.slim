@@ -1,0 +1,6 @@
+.text-center.my-4
+  h2 = @article.title
+  h4 = @article.subtitle
+
+.d-flex.justify-content-center.mt-5
+  .w-75 = @article.content.html_safe
