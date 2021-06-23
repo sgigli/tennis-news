@@ -17,7 +17,7 @@
 @import "devise";
 @import "articles";
 
-.header {
+.header_title {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 2.25rem;
 }
@@ -27,6 +27,10 @@
   border-bottom: 1px solid #D3D3D3;
 }
 
+.overline {
+  border-top: 1px solid #D3D3D3;
+}
+
 .right-align {
   float: right;
 }
@@ -34,8 +38,3 @@
 .bi-search:hover {
   cursor: pointer;
 }
-
-// .test {
-//   background-color: red;
-// }
-

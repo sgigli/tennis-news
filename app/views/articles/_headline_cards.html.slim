@@ -1,3 +1,7 @@
 - @articles.each do |id, headline, subheadline|
-  = link_to "#{headline}", article_path(id), class: "headline"
-  h6 = subheadline
+  .row.overline
+    .col-9
+      = link_to "#{headline}", article_path(id), class: "headline"
+      h6 = subheadline
+    .col-3
+      | Pic
