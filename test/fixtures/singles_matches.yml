@@ -2,12 +2,16 @@
 
 one:
   score: MyString
-  winner: MyString
+  winner_id: 1
+  date: 2021-06-23
   player_1_id: 1
   player_2_id: 1
+  tournament: one
 
 two:
   score: MyString
-  winner: MyString
+  winner_id: 1
+  date: 2021-06-23
   player_1_id: 1
   player_2_id: 1
+  tournament: two

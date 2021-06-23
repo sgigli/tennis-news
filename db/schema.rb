@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_22_203223) do
+ActiveRecord::Schema.define(version: 2021_06_23_175937) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -106,11 +106,14 @@ ActiveRecord::Schema.define(version: 2021_06_22_203223) do
 
   create_table "singles_matches", force: :cascade do |t|
     t.string "score"
-    t.string "winner"
+    t.integer "winner_id"
+    t.date "date"
     t.integer "player_1_id"
     t.integer "player_2_id"
+    t.integer "tournament_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["tournament_id"], name: "index_singles_matches_on_tournament_id"
   end
 
   create_table "singles_stats", force: :cascade do |t|

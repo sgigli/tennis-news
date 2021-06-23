@@ -4,5 +4,6 @@ class RemoveSeedData
     Country.all.each { |country| country.destroy }
     Article.all.each { |article| article.destroy }
     TennisAssociation.all.each { |association| association.destroy }
+    Tournament.all.each { |tournament| tournament.destroy }
   end
 end
