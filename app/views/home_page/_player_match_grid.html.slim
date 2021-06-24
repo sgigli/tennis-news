@@ -1,0 +1,10 @@
+- winner = match.winner_id == player.id
+.col.border.border-dark
+  = player.last_name
+  - if winner
+    i.bi.bi-check.text-success
+- match.sets.each do |set|
+  .col-1.border.border-dark
+    - won_set = set[position] == set.max
+    div class=("font-weight-bold" if won_set) 
+      = set[position]

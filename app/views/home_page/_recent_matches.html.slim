@@ -1,11 +1,8 @@
 - @recent_matches.each do |match|
-  .row
-    .col
-      = match.player_1.last_name
-    .col
-      | Test
-  .row
-    .col
-      = match.player_2.last_name
-    .col
-      | Test
+  .row.mx-2
+    .col.border.border-dark.text-center
+      = match.tournament.name
+    .w-100
+    = render "home_page/player_match_grid", match: match, player: match.player_1, position: 0
+    .w-100
+    = render "home_page/player_match_grid", match: match, player: match.player_2, position: 1
