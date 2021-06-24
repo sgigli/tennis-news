@@ -1,5 +1,12 @@
 {
   "name": "tennis_news",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sgigli/tennis-news.git",
+  "author": "sgigli <simon.luciano@gigli.net>",
+  "license": "MIT"
 }
