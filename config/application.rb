@@ -17,7 +17,7 @@ module TennisNews
     # the framework and any gems in your application.
 
     config.autoload_paths += Dir[Rails.root.join("app", "models", "{**/}")]
-
+    config.autoload_paths += Dir[Rails.root.join("app", "services", "{**/}")]
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
   end
 end

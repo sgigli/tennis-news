@@ -1,4 +1,4 @@
-class UploadS3Image
+class UploadS3Headshot
   def call(player)
     photo_files = Dir["app/assets/images/headshots/*"]
 
