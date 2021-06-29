@@ -12,6 +12,7 @@ class Player < ApplicationRecord
     unscope(where: :player_id).where("player_1_id = ? OR player_2_id = ?", player.id, player.id)
   }, dependent: :destroy
   has_one :doubles_stats, dependent: :destroy
+  has_one_attached :headshot
 
   def overview
     {

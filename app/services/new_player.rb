@@ -19,6 +19,8 @@ class NewPlayer
     player.create_bio(birthplace: @birthplace, age: @age, birthday: @birthday, mother: @mother, father: @father, residence: @residence)
     player.create_singles_stats(ranking: @singles_ranking, points: @singles_points, career_titles: @career_singles_titles, career_record: @career_singles_record)
     player.create_doubles_stats(ranking: @doubles_ranking, points: @doubles_points, career_titles: @career_doubles_titles, career_record: @career_doubles_record)
+    
+    # UploadS3Image.new.call(player.last_name)
 
   end
 end
