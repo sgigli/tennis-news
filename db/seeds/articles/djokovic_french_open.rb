@@ -1,10 +1,11 @@
-djokovic_article = {
+djokovic_french_open = {
   link: "https://www.atptour.com/en/news/djokovic-tsitsipas-roland-garros-2021-final-updates",
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
   title: "How Djokovic Rallied From The Brink To Beat Tsitsipas",
   subtitle: "The World No. 1 lifts his second Coupe des Mousquetaires",
+  date: Date.new(2021, 6, 13),
   content: "<p>Novak Djokovic made a stunning comeback in the Roland Garros final on Sunday afternoon 
             when he rallied past fifth seed Stefanos Tsitsipas 6-7(6), 2-6, 6-3, 6-2, 6-4 to lift his 
             19th Grand Slam trophy.</p>
@@ -88,4 +89,4 @@ djokovic_article = {
             ninth man in the Open Era to beat both the top two seeds at a major.</p>"       
 }
 
-Article.create!(djokovic_article)
+Article.create!(djokovic_french_open)
