@@ -13,4 +13,4 @@ end
 # load "db/seeds/players.rb"
 # load "db/seeds/tournaments.rb"
 # load "db/seeds/singles_matches.rb"
-# load "db/seeds/s3_uploads.rb"
+load "db/seeds/s3_uploads.rb"
