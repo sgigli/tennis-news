@@ -1,6 +1,6 @@
 div[id=carousel_id class="carousel slide"]
   div[class="carousel-inner"]
-    - players.each_with_index do |player, index|
+    - players&.each_with_index do |player, index|
       div[
         class=(index == 0 ? "carousel-item active" : "carousel-item")
         style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(#{url_for(player.country.flag)});"

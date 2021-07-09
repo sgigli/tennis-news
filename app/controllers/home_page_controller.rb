@@ -1,8 +1,8 @@
 class HomePageController < ApplicationController
   def index
-    @articles = Article.all.pluck(:id, :title, :subtitle)
+    @articles = Article.order_by_date
     @recent_matches = SinglesMatch.all
-    @atp_players = TennisAssociation.atp.players
-    @wta_players = TennisAssociation.wta.players
+    @atp_players = TennisAssociation.atp&.players
+    @wta_players = TennisAssociation.wta&.players
   end
 end

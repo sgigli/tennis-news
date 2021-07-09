@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all.pluck(:id, :title, :subtitle)
+    @articles = Article.order_by_date
   end
 
   def show
