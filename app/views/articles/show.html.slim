@@ -1,6 +1,10 @@
-.text-center.my-4
-  h2 = @article.title
-  h4 = @article.subtitle
-
 .d-flex.justify-content-center.mt-5
-  .w-75 = @article.content.html_safe
+  .w-75
+    h2 = @article.title
+    h4 = @article.subtitle
+    = image_tag @article.images.first.variant(resize: "700x700"), class: "w-100 my-4"
+    .text-secondary
+      p.d-inline-block = "by #{@article.author} from"
+      = link_to @article.site_name, @article.link, class: "ml-1"
+      p.pl-3.ml-4.d-inline-block.border-left = @article.date.strftime("%B %d, %Y")
+    .mt-4 = @article.content.html_safe

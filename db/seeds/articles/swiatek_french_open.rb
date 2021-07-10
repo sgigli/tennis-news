@@ -1,7 +1,7 @@
 swiatek_french_open = {
   link: "https://www.tennis.com/news/articles/staying-power-can-swiatek-bring-consistency-to-top-of-women-s-game",
   site: "www.tennis.com",
-  site_name: "Tennis",
+  site_name: "Tennis.com",
   author: "Steve Tignor",
   title: "Can champion Iga Swiatek bring consistency, too?",
   subtitle: "Judging by recent evidence, it’s only getting tougher for today’s young players 
