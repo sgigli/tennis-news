@@ -1,0 +1,11 @@
+.card
+  .row
+    .col-3.d-flex.align-items-center
+      - if player.headshot.attached?
+        = image_tag player.headshot.variant(resize: "100x100"), class: "fill"
+    .col-6
+      h3 = player.full_name
+      h6 = player.country.name
+    .col-3.d-flex.align-items-center
+      - if player.country.flag.attached?
+        = image_tag player.country.flag.variant(resize: "100x100"), class: "fill"

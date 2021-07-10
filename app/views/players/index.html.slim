@@ -1,5 +1,17 @@
-.row
-  .col
-    = render "players/player_cards", players: @atp_players
-  .col
-    = render "players/player_cards", players: @wta_players         
+.row.mt-4
+  .col-1.pt-3
+    h6 Rankings
+  .col.text-center
+    h3 ATP
+  .col.text-center
+    h3 WTA
+
+- 0.upto(@atp_players.count - 1).to_a.each do |index|
+  .row.mt-3
+    .col-1.d-flex.align-items-center.justify-content-center
+      = render "ranking_card", index: index + 1
+    .col
+      = render "players/player_card", player: @atp_players[index]
+    .col
+      - if @wta_players[index].present?
+        = render "players/player_card", player: @wta_players[index]    
