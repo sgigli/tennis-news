@@ -1,16 +1,34 @@
-.row
-  .col.border.border-dark
+.row.mt-3
+  .col.border.border-dark style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(#{url_for(@player.country.flag)});"
     = image_tag @player.headshot.variant(resize: "500x500"), class: "fill"
   .col
     h6 = @player.first_name
     h2 = @player.last_name
+    .row.my-3
+      .col Country: #{@player.country.name}
+      .col Residence: #{@player.bio.residence}
+      .w-100
+      .col Born: #{@player.bio.birthday} (#{@player.bio.age} years old)
+      .col Height: #{@player.size.height_to_cm} - Weight: #{@player.size.weight_to_kilos}
+      .w-100
+      .col Career Earnings: #{number_to_currency(@player.earnings.prize_money, precision: 0)}
     ul.nav.nav-tabs
       li.nav-items.stats_tab.w-50 onclick="toggle_stats('singles')"
         a.nav-link.active#singles_tab Singles Stats
       li.nav-item.stats_tab.w-50 onclick="toggle_stats('doubles')"
         a.nav-link#doubles_tab Doubles Stats
-    #singles_stats singles stats
-    #doubles_stats.d-none doubles stats
+    #singles_stats
+      .pt-3
+      h4.d-block Ranking: #{@player.singles_stats.ranking}
+      h4.d-block Points: #{@player.singles_stats.points}
+      h4.d-block Titles: #{@player.singles_stats.career_titles}
+      h4.d-block Career Record: #{@player.singles_stats.career_record}
+    #doubles_stats.d-none
+      .pt-3
+      h4.d-block Ranking: #{@player.doubles_stats.ranking}
+      h4.d-block Points: #{@player.doubles_stats.points}
+      h4.d-block Titles: #{@player.doubles_stats.career_titles}
+      h4.d-block Career Record: #{@player.doubles_stats.career_record}
 
 javascript:
   function toggle_stats(tab) {
