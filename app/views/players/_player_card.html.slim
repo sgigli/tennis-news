@@ -1,4 +1,4 @@
-.card
+.card.player_card onclick="test(#{player.id})"
   .row
     .col-3.d-flex.align-items-center
       - if player.headshot.attached?
@@ -9,3 +9,8 @@
     .col-3.d-flex.align-items-center
       - if player.country.flag.attached?
         = image_tag player.country.flag.variant(resize: "100x100"), class: "fill"
+
+javascript:
+  function test(id) {
+    window.location.href = "/players/" + id
+  }

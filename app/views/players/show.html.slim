@@ -1,0 +1,33 @@
+.row
+  .col.border.border-dark
+    = image_tag @player.headshot.variant(resize: "500x500"), class: "fill"
+  .col
+    h6 = @player.first_name
+    h2 = @player.last_name
+    ul.nav.nav-tabs
+      li.nav-items.stats_tab.w-50 onclick="toggle_stats('singles')"
+        a.nav-link.active#singles_tab Singles Stats
+      li.nav-item.stats_tab.w-50 onclick="toggle_stats('doubles')"
+        a.nav-link#doubles_tab Doubles Stats
+    #singles_stats singles stats
+    #doubles_stats.d-none doubles stats
+
+javascript:
+  function toggle_stats(tab) {
+    singles_tab = document.getElementById("singles_tab")
+    singles_stats = document.getElementById("singles_stats")
+    doubles_tab = document.getElementById("doubles_tab")
+    doubles_stats = document.getElementById("doubles_stats")
+
+    if (tab === "singles") {
+      singles_tab.classList.add("active")
+      singles_stats.classList.remove("d-none")
+      doubles_tab.classList.remove("active")
+      doubles_stats.classList.add("d-none")
+    } else {
+      singles_tab.classList.remove("active")
+      singles_stats.classList.add("d-none")
+      doubles_tab.classList.add("active")
+      doubles_stats.classList.remove("d-none")
+    }
+  }
