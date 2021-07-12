@@ -13,9 +13,9 @@
       .w-100
       .col Career Earnings: #{number_to_currency(@player.earnings.prize_money, precision: 0)}
     ul.nav.nav-tabs
-      li.nav-item.stats_tab.w-50 onclick="toggle_stats('singles')"
+      li.nav-item.clickable.w-50 onclick="toggle_stats('singles')"
         a.nav-link.active#singles_tab Singles Stats
-      li.nav-item.stats_tab.w-50 onclick="toggle_stats('doubles')"
+      li.nav-item.clickable.w-50 onclick="toggle_stats('doubles')"
         a.nav-link#doubles_tab Doubles Stats
     #singles_stats
       .pt-3

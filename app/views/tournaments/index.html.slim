@@ -1,2 +1,13 @@
-- @tournaments.each do |tournament|
-  h3 = tournament.name
+.row.mt-3
+  - @tournaments.each_with_index do |tournament, index|
+    .col.clickable_with_tint
+      .card
+        = image_tag tournament.image.variant(resize: "600x600"), class: "w-100"
+        .pt-3.pl-3
+          h3 = tournament.name
+          h6 = tournament.location
+          p = "#{tournament.start_date.strftime("%B %d, %Y")} to #{tournament.end_date.strftime("%B %d, %Y")}"
+    - if index % 2 == 0 && index != 0
+      .w-100
+
+      / add atp points to tournament, add round to match

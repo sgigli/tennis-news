@@ -42,6 +42,11 @@
   float: right;
 }
 
-.bi-search:hover {
+.clickable:hover {
   cursor: pointer;
+}
+
+.clickable_with_tint:hover {
+  cursor: pointer;
+  opacity: .75;
 }
