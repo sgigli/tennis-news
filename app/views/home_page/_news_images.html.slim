@@ -1,13 +1,13 @@
 .row
   .col-6.main_news_image.pl-0
     = image_tag @articles.first.images.first.variant(resize: "600x600"), class: "h-100"
-    h2[class="main-caption-overlay"] = @articles.first.title
+    = link_to @articles.first.title, article_path(@articles.first.id), class: "main-caption-overlay"
   .col-2
     .row
       - @articles[1..3].each do |article|
         .col.side_news_image.px-0
           = image_tag article.images.first.variant(resize: "250x250"), class: "h-100"
-          div[class="side-caption-overlay"] = article.title
+          = link_to article.title, article_path(article.id), class: "side-caption-overlay"
         .w-100
   .col-4.bg-light
     h5.text-center.mt-2 Recent Matches
