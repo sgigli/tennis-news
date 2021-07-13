@@ -108,6 +108,7 @@ ActiveRecord::Schema.define(version: 2021_06_23_175937) do
     t.string "score"
     t.integer "winner_id"
     t.date "date"
+    t.string "round"
     t.integer "player_1_id"
     t.integer "player_2_id"
     t.integer "tournament_id"
