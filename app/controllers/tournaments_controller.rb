@@ -4,6 +4,6 @@ class TournamentsController < ApplicationController
   end
 
   def show
-    @tournament = Tournament.find(params[:id])
+    @tournament = Tournament.find_by_id(params[:id])
   end
 end
