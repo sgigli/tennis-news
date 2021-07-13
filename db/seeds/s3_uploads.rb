@@ -1,11 +1,13 @@
-# UploadS3Headshot.new.call("djokovic")
-# UploadS3Headshot.new.call("tsitsipas")
-# UploadS3Headshot.new.call("barty")
+UploadS3Headshot.new.call("djokovic")
+UploadS3Headshot.new.call("tsitsipas")
+UploadS3Headshot.new.call("barty")
 
-# UploadS3Flag.new.call("serbia")
-# UploadS3Flag.new.call("greece")
-# UploadS3Flag.new.call("australia")
+UploadS3Flag.new.call("serbia")
+UploadS3Flag.new.call("greece")
+UploadS3Flag.new.call("australia")
 
+UploadS3Tournament.new.call("french_open")
+UploadS3Tournament.new.call("wimbledon")
 
 UploadS3Article.new.call(
   article_title: "How Djokovic Rallied From The Brink To Beat Tsitsipas",

@@ -9,8 +9,7 @@
 Dir["db/seeds/articles/*"].each do |article|
   load article
 end
-# load "db/seeds/articles.rb"
-# load "db/seeds/players.rb"
-# load "db/seeds/tournaments.rb"
-# load "db/seeds/singles_matches.rb"
+load "db/seeds/players.rb"
+load "db/seeds/tournaments.rb"
+load "db/seeds/singles_matches.rb"
 load "db/seeds/s3_uploads.rb"
