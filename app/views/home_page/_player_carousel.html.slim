@@ -1,11 +1,11 @@
 div[id=carousel_id class="carousel slide"]
-  div[class="carousel-inner"]
+  div[class="carousel-inner clickable_with_tint"]
     - players&.each_with_index do |player, index|
       div[
         class=(index == 0 ? "carousel-item active" : "carousel-item")
         style="background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(#{url_for(player.country.flag)});"
       ]
-        .d-flex
+        .d-flex onclick="redirect_player_show(#{player.id})"
           = image_tag player.headshot.variant(resize: "300x300"), class: "w-75"
           div.text-right.text-white.w-25.pr-3 style="text-shadow: 1px 1px black;"
             h1 = "##{player.singles_stats.ranking}"
@@ -16,3 +16,8 @@ div[id=carousel_id class="carousel slide"]
   a[class="carousel-control-next" href="##{carousel_id}" role="button" data-slide="next"]
     span[class="carousel-control-next-icon" aria-hidden="true"]
     span[class="sr-only"]Next
+
+javascript:
+  function redirect_player_show(id) {
+    window.location.href = "/players/" + id
+  }
