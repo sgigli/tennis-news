@@ -9,6 +9,6 @@
           = image_tag article.images.first.variant(resize: "250x250"), class: "h-100"
           = link_to article.title, article_path(article.id), class: "side-caption-overlay"
         .w-100
-  .col-4.bg-light
+  .col-4.bg-white
     h5.text-center.mt-2 Recent Matches
     = render "home_page/recent_matches"

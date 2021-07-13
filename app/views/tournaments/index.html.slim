@@ -1,6 +1,6 @@
 .row.mt-3
   - @tournaments.each_with_index do |tournament, index|
-    .col.clickable_with_tint
+    .col.clickable_with_tint onclick="redirect_tournament_show(#{tournament.id})"
       .card
         = image_tag tournament.image.variant(resize: "600x600"), class: "w-100"
         .pt-3.pl-3
@@ -11,3 +11,8 @@
       .w-100
 
       / add atp points to tournament, add round to match
+
+javascript:
+  function redirect_tournament_show(id) {
+    window.location.href = "/tournaments/" + id
+  }

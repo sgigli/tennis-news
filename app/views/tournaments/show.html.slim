@@ -1,0 +1,11 @@
+h2.text-center.mt-3.mb-5 = @tournament.name
+
+- @tournament.singles_matches_by_round.each do |round, matches|
+  h5 = round.capitalize
+  .row.pt-2
+    - matches.each do |match|
+      .col-4
+        = render "tournaments/grid_row", match: match, player: match.player_1, position: 0
+        = render "tournaments/grid_row", match: match, player: match.player_2, position: 1
+
+
