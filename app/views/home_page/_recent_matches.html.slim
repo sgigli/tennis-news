@@ -1,7 +1,7 @@
 - @recent_matches.each do |match|
   .row.mx-2.bg-white
     .col.border.border-dark.text-center.bg-secondary.text-white
-      = match.tournament.name
+      = "#{match.tournament.name} - #{match.round.capitalize}"
     .w-100
     = render "home_page/player_match_grid", match: match, player: match.player_1, position: 0
     .w-100
