@@ -1,0 +1,21 @@
+- if @results_hash["players"].present?
+  h2.my-4 Players
+  .pb-3
+    - @results_hash["players"].each do |player|
+      .w-50
+        = render "players/player_card", player: player
+
+- if @results_hash["articles"].present?
+  h2.mt-3.mb-4 Articles
+  - @results_hash["articles"].each do |article|
+    = render "articles/headline_card", article: article
+
+- if @results_hash["singles_matches"].present?
+  h2.mt-3.mb-4 Singles Matches
+  - @results_hash["singles_matches"].each do |match|
+    div[style="width: 33%;"]
+      = render "tournaments/grid_row", match: match, player: match.player_1, position: 0
+      = render "tournaments/grid_row", match: match, player: match.player_2, position: 1
+
+- if @results_hash.empty?
+  h4.mt-5.text-center Sorry, no results were found! Try re-wording your search.

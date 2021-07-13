@@ -1,1 +1,2 @@
-= render "articles/headline_cards", drop: 0
+- @articles.each do |article|
+  = render "articles/headline_card", article: article

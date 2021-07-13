@@ -1,9 +1,0 @@
-- @articles.drop(drop).each do |article|
-  .row.overline.py-3
-    .col-9
-      = link_to article.title, article_path(article.id), class: "headline"
-      h6 = article.subtitle
-    .col-3
-      = image_tag article.images.first.variant(resize: "250x250")
-
-      

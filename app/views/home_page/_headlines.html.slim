@@ -1,3 +1,4 @@
 h3.headline_section_title.mt-4 More Headlines
 
-= render "articles/headline_cards", drop: 4
+- @articles.drop(4).each do |article|
+  = render "articles/headline_card", article: article
