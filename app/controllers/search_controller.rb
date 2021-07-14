@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def index
     entry = params[:entry].downcase
-    @results_hash = Search.new.call(entry)
+    @search_facade = SearchFacade.new(entry)
   end
 end

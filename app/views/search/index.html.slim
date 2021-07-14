@@ -1,21 +1,21 @@
-- if @results_hash["players"].present?
+- if @search_facade.player_results.present?
   h2.my-4 Players
   .pb-3
-    - @results_hash["players"].each do |player|
+    - @search_facade.player_results.each do |player|
       .w-50
         = render "players/player_card", player: player
 
-- if @results_hash["articles"].present?
+- if @search_facade.article_results.present?
   h2.mt-3.mb-4 Articles
-  - @results_hash["articles"].each do |article|
+  - @search_facade.article_results.each do |article|
     = render "articles/headline_card", article: article
 
-- if @results_hash["singles_matches"].present?
+- if @search_facade.singles_matches_results.present?
   h2.mt-3.mb-4 Singles Matches
-  - @results_hash["singles_matches"].each do |match|
+  - @search_facade.singles_matches_results.each do |match|
     div[style="width: 33%;"]
       = render "tournaments/grid_row", match: match, player: match.player_1, position: 0
       = render "tournaments/grid_row", match: match, player: match.player_2, position: 1
 
-- if @results_hash.empty?
+- if @search_facade.no_results?
   h4.mt-5.text-center Sorry, no results were found! Try re-wording your search.
