@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.order_by_date
+    @pagy, @articles = pagy(Article.order_by_date, items: 10)
   end
 
   def show
