@@ -3,6 +3,6 @@
     .col.border.border-dark.text-center.bg-secondary.text-white
       = "#{match.tournament.name} - #{match.round.capitalize}"
     .w-100
-    = render "home_page/player_match_grid", match: match, player: match.player_1, position: 0
-    .w-100
-    = render "home_page/player_match_grid", match: match, player: match.player_2, position: 1
+    .col
+      = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
+      = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1

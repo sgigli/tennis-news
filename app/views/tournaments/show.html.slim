@@ -5,7 +5,7 @@ h2.text-center.mt-3.mb-5 = @tournament.name
   .row.pt-2
     - matches.each do |match|
       .col-4
-        = render "tournaments/grid_row", match: match, player: match.player_1, position: 0
-        = render "tournaments/grid_row", match: match, player: match.player_2, position: 1
+        = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
+        = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
 
 
