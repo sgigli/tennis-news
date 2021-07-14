@@ -18,14 +18,14 @@ class SearchFacade
   end
 
   def tournament_results
-    @tournament_results ||= Tournament.order_by_date.select do |tournament|
+    @tournament_results ||= Tournament.order_by_start_date.select do |tournament|
       tournament_name = tournament.name.downcase
-      tournament_name.include?(entry) || entry.include?(tournament_name)
+      tournament_name.include?(@entry) || @entry.include?(tournament_name)
     end
   end
 
   def singles_matches_results
-    @singles_matches_results ||= @player_results.map { |player| player.singles_matches }.flatten
+    @singles_matches_results ||= player_results.map { |player| player.singles_matches }.flatten
   end
 
   def no_results?

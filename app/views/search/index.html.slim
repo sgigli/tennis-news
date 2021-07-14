@@ -10,6 +10,13 @@
   - @search_facade.article_results.each do |article|
     = render "articles/headline_card", article: article
 
+- if @search_facade.tournament_results.present?
+  h2.mt-3.mb-4 Tournaments
+  = render "tournaments/tournament_cards", tournaments: @search_facade.tournament_results
+  / - @search_facade.tournament_results.each do |tournament|
+  /   .w-50.d-inline-block
+  /     = render "tournaments/tournament_card", tournament: tournament
+
 - if @search_facade.singles_matches_results.present?
   h2.mt-3.mb-4 Singles Matches
   - @search_facade.singles_matches_results.each do |match|
