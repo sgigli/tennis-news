@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
   def index
-    @atp_players = TennisAssociation.atp.players
-    @wta_players = TennisAssociation.wta.players
+    @pagy, @atp_players = pagy(TennisAssociation.atp.players, items: 10)
+    @pagy, @wta_players = pagy(TennisAssociation.wta.players, items: 10)
   end
 
   def show
