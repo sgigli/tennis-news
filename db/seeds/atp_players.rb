@@ -191,7 +191,7 @@ atp_players = [
   {
     first_name: "Matteo",
     last_name: "Berrettini",
-    country: "Russia",
+    country: "Italy",
     singles_ranking: 8,
     singles_points: 5488,
     association_name: "Association of Tennis Professionals",
@@ -245,7 +245,7 @@ atp_players = [
   {
     first_name: "Denis",
     last_name: "Shapovalov",
-    country: "Switzerland",
+    country: "Canada",
     singles_ranking: 10,
     singles_points: 3625,
     association_name: "Association of Tennis Professionals",

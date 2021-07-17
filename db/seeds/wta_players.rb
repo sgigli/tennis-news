@@ -83,7 +83,7 @@ wta_players = [
   {
     first_name: "Sofia",
     last_name: "Kenin",
-    country: "United States",
+    country: "USA",
     association_name: "Women's Tennis Association",
     association_acronym: "WTA",
     singles_ranking: 4,
