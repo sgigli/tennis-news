@@ -12,5 +12,7 @@ end
 load "db/seeds/atp_players.rb"
 load "db/seeds/wta_players.rb"
 load "db/seeds/tournaments.rb"
-load "db/seeds/singles_matches.rb"
+Dir["db/seeds/singles_matches/*"].each do |singles_matches|
+  load singles_matches
+end
 load "db/seeds/s3_uploads.rb"
