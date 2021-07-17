@@ -9,8 +9,7 @@ class UploadS3Headshot
 
     File.open(file) do |file|
       file_basename = file.path.split("/").last
-      player_last_name = file_basename.split(".").first.capitalize
-      player = Player.find_by(last_name: player_last_name)
+      player = Player.find_by(last_name: player.capitalize)
 
       player.headshot.attach(
         io: file,
