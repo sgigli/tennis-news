@@ -69,3 +69,11 @@ UploadS3Article.new.call(
   article_title: "Federer Makes Winning Start To Grass Season In Halle",
   file_name: "federer_halle"
   )
+UploadS3Article.new.call(
+  article_title: "Barty claims Wimbledon title with three-set defeat of Pliskova",
+  file_name: "barty_wimbledon"
+  )
+UploadS3Article.new.call(
+  article_title: "Djokovic Wins Sixth Wimbledon Trophy For Record-Equalling 20th Grand Slam Crown",
+  file_name: "djokovic_wimbledon"
+  )
