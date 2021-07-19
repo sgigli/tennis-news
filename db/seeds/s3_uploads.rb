@@ -42,38 +42,38 @@ UploadS3Tournament.new.call("french_open")
 UploadS3Tournament.new.call("wimbledon")
 
 UploadS3Article.new.call(
-  article_title: "How Djokovic Rallied From The Brink To Beat Tsitsipas",
+  article_title: "How Djokovic Rallied from the Brink to Beat Tsitsipas",
   file_name: "djokovic_french_open"
   )
 UploadS3Article.new.call(
-  article_title: "Tsitsipas Wins Maiden Masters 1000 Crown In Monte-Carlo",
+  article_title: "Tsitsipas Wins Maiden Masters 1000 Crown in Monte-Carlo",
   file_name: "tsitsipas_monte_carlo"
   )
 UploadS3Article.new.call(
-  article_title: "Barbora Krejcikova doubles up at French Open to make mark on history",
+  article_title: "Barbora Krejcikova Doubles Up at French Open to Make Mark on History",
   file_name: "krejcikova_french_open"
   )
 UploadS3Article.new.call(
-  article_title: "Can champion Iga Swiatek bring consistency, too?",
+  article_title: "Can Champion Iga Swiatek Bring Consistency, Too?",
   file_name: "swiatek_french_open"
   )
 UploadS3Article.new.call(
-  article_title: "Iga Swiatek double bagels Karolina Pliskova to win the Rome WTA 1000 title",
+  article_title: "Iga Swiatek Double Bagels Karolina Pliskova to Win the Rome WTA 1000 Title",
   file_name: "swiatek_rome"
   )
 UploadS3Article.new.call(
-  article_title: "Nadal Saves M.P., Makes It A Dozen In Barcelona",
+  article_title: "Nadal Saves M.P., Makes it a Dozen in Barcelona",
   file_name: "nadal_barcelona"
   )
 UploadS3Article.new.call(
-  article_title: "Federer Makes Winning Start To Grass Season In Halle",
+  article_title: "Federer Makes Winning Start to Grass Season in Halle",
   file_name: "federer_halle"
   )
 UploadS3Article.new.call(
-  article_title: "Barty claims Wimbledon title with three-set defeat of Pliskova",
+  article_title: "Barty Claims Wimbledon Title with Three-Set Defeat of Pliskova",
   file_name: "barty_wimbledon"
   )
 UploadS3Article.new.call(
-  article_title: "Djokovic Wins Sixth Wimbledon Trophy For Record-Equalling 20th Grand Slam Crown",
+  article_title: "Djokovic Wins Sixth Wimbledon Trophy for Record-Equalling 20th Grand Slam Crown",
   file_name: "djokovic_wimbledon"
   )
