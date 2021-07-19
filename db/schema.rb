@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_19_162241) do
+ActiveRecord::Schema.define(version: 2021_07_19_172557) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -77,6 +77,17 @@ ActiveRecord::Schema.define(version: 2021_07_19_162241) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tournament_id"], name: "index_doubles_matches_on_tournament_id"
+  end
+
+  create_table "doubles_stats", force: :cascade do |t|
+    t.integer "ranking"
+    t.integer "points"
+    t.integer "career_titles"
+    t.string "career_record"
+    t.integer "player_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_doubles_stats_on_player_id"
   end
 
   create_table "earnings", force: :cascade do |t|

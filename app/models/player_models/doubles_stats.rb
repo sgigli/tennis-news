@@ -1,0 +1,2 @@
+class DoublesStats < ApplicationRecord
+end
