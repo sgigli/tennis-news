@@ -3,7 +3,7 @@ tsitsipas_monte_carlo = {
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
-  title: "Tsitsipas Wins Maiden Masters 1000 Crown In Monte-Carlo",
+  title: "Tsitsipas Wins Maiden Masters 1000 Crown in Monte-Carlo",
   subtitle: "Greek now leads the 2021 FedEx ATP Race To Turin for spot at Nitto ATP Finals",
   date: Date.new(2021, 6, 13),
   content: "<p>Third time proved to be the charm for Stefanos Tsitsipas at the Rolex 

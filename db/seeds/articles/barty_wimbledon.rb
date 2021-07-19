@@ -3,7 +3,7 @@ barty_wimbledon = {
   site: "www.wtatennis.com",
   site_name: "WTA Tour",
   author: "WTA Staff",
-  title: "Barty claims Wimbledon title with three-set defeat of Pliskova",
+  title: "Barty Claims Wimbledon Title with Three-Set Defeat of Pliskova",
   subtitle: "Top seed Ashleigh Barty captured her first Wimbledon title and second Grand 
             Slam crown with a three-set win over Karolina Pliskova.",
   date: Date.new(2021, 7, 10),

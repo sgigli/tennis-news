@@ -3,7 +3,7 @@ swiatek_rome = {
   site: "www.skysports.com",
   site_name: "Sky Sports",
   author: "Raz Mirza",
-  title: "Iga Swiatek double bagels Karolina Pliskova to win the Rome WTA 1000 title",
+  title: "Iga Swiatek Double Bagels Karolina Pliskova to Win the Rome WTA 1000 Title",
   subtitle: "Iga Swiatek warms up for defence of her French Open title later this month 
             with a sensational 6-0 6-0 display to crush Czech ninth-seed Karolina Pliskova 
             at the Internazionali BNL d'Italia in Rome; Poland's Swiatek will crack the top 

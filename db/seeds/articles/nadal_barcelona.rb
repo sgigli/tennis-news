@@ -3,7 +3,7 @@ nadal_barcelona = {
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
-  title: "Nadal Saves M.P., Makes It A Dozen In Barcelona",
+  title: "Nadal Saves M.P., Makes it a Dozen in Barcelona",
   subtitle: "Top seed wins 61st tour-level title on clay",
   date: Date.new(2021, 4, 25),
   content: "<p>Rafael Nadal saved one championship point on Sunday to defeat 

@@ -3,7 +3,7 @@ djokovic_french_open = {
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
-  title: "How Djokovic Rallied From The Brink To Beat Tsitsipas",
+  title: "How Djokovic Rallied from the Brink to Beat Tsitsipas",
   subtitle: "The World No. 1 lifts his second Coupe des Mousquetaires",
   date: Date.new(2021, 6, 13),
   content: "<p>Novak Djokovic made a stunning comeback in the Roland Garros final on Sunday afternoon 

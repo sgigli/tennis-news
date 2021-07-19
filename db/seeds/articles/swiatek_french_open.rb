@@ -3,7 +3,7 @@ swiatek_french_open = {
   site: "www.tennis.com",
   site_name: "Tennis.com",
   author: "Steve Tignor",
-  title: "Can champion Iga Swiatek bring consistency, too?",
+  title: "Can Champion Iga Swiatek Bring Consistency, Too?",
   subtitle: "Judging by recent evidence, it’s only getting tougher for today’s young players 
             to shoulder the pressures of competition for long periods of time. But the Polish 
             teen—one of the first Gen Z Slam champions—hopes to bust a few myths along the way.",

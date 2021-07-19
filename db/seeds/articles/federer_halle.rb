@@ -3,7 +3,7 @@ federer_halle = {
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
-  title: "Federer Makes Winning Start To Grass Season In Halle",
+  title: "Federer Makes Winning Start to Grass Season in Halle",
   subtitle: "The fifth seed will next play Auger-Aliassime or Hurkacz",
   date: Date.new(2021, 6, 14),
   content: "<p>Roger Federer made a good start to his grass-court season on Monday with 

@@ -3,7 +3,7 @@ djokovic_wimbledon = {
   site: "www.atptour.com",
   site_name: "ATP Tour",
   author: "ATP Staff",
-  title: "Djokovic Wins Sixth Wimbledon Trophy For Record-Equalling 20th Grand Slam Crown",
+  title: "Djokovic Wins Sixth Wimbledon Trophy for Record-Equalling 20th Grand Slam Crown",
   subtitle: "World No. 1 draws level with Federer and Nadal's Grand Slam titles haul",
   date: Date.new(2021, 7, 11),
   content: "<p>Novak Djokovic fulfilled his childhood prediction on Sunday that one day 

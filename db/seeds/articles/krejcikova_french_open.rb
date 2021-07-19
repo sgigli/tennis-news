@@ -3,7 +3,7 @@ krejcikova_french_open = {
   site: "www.theguardian.com",
   site_name: "The Guardian",
   author: "Tumaini Carayol",
-  title: "Barbora Krejcikova doubles up at French Open to make mark on history",
+  title: "Barbora Krejcikova Doubles Up at French Open to Make Mark on History",
   subtitle: "Krejcikova and Katerina Siniakova win women’s doubles title. 
             Czech is first player to win both Paris titles since Mary Pierce",
   date: Date.new(2021, 6, 13),
