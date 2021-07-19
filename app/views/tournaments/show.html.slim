@@ -1,11 +1,46 @@
 h2.text-center.mt-3.mb-5 = @tournament.name
 
-- @tournament.singles_matches_by_round.each do |round, matches|
-  h5 = round.capitalize
-  .row.pt-2
-    - matches.each do |match|
-      .col-4
-        = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
-        = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
+.d-flex.justify-content-center.rounded style="background-color: #009933"
+  ul.nav.nav-tabs.w-75.d-flex.justify-content-center.bg-light
+    li.nav-item.clickable.w-50 onclick="toggle_matches('mens')"
+      a.nav-link.active#mens_tab Men's
+    li.nav-item.clickable.w-50 onclick="toggle_matches('womens')"
+      a.nav-link#womens_tab Women's
+#mens_matches.mt-5
+  - @tournament.singles_matches.atp.sort_by_round.each do |round, matches|
+    h5 = round.capitalize
+    .row.pt-2
+      - matches.each do |match|
+        .col-4
+          = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
+          = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
+#womens_matches.mt-5.d-none
+  - @tournament.singles_matches.wta.sort_by_round.each do |round, matches|
+    h5 = round.capitalize
+    .row.pt-2
+      - matches.each do |match|
+        .col-4
+          = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
+          = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
 
+
+javascript:
+  function toggle_matches(tab) {
+    mens_tab = document.getElementById("mens_tab")
+    mens_matches = document.getElementById("mens_matches")
+    womens_tab = document.getElementById("womens_tab")
+    womens_matches = document.getElementById("womens_matches")
+
+    if (tab === "mens") {
+      mens_tab.classList.add("active")
+      mens_matches.classList.remove("d-none")
+      womens_tab.classList.remove("active")
+      womens_matches.classList.add("d-none")
+    } else {
+      mens_tab.classList.remove("active")
+      mens_matches.classList.add("d-none")
+      womens_tab.classList.add("active")
+      womens_matches.classList.remove("d-none")
+    }
+  }
 
