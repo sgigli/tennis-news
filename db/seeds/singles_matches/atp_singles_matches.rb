@@ -11,6 +11,7 @@ french_open = [
     winner_id: djokovic.id,
     date: Date.new(2021,06,13),
     round: "finals",
+    tennis_association: "ATP",
     player_1_id: djokovic.id,
     player_2_id: tsitsipas.id,
     tournament_id: french_open.id
@@ -23,6 +24,7 @@ wimbledon = [
     winner_id: djokovic.id,
     date: Date.new(2021,07,11),
     round: "finals",
+    tennis_association: "ATP",
     player_1_id: djokovic.id,
     player_2_id: berrettini.id,
     tournament_id: wimbledon.id

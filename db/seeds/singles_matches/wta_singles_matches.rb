@@ -9,6 +9,7 @@ wimbledon = [
     winner_id: barty.id,
     date: Date.new(2021,07,10),
     round: "finals",
+    tennis_association: "WTA",
     player_1_id: barty.id,
     player_2_id: pliskova.id,
     tournament_id: wimbledon.id
