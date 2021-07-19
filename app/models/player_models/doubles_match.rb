@@ -1,4 +1,4 @@
-class SinglesMatch < ApplicationRecord
+class DoublesMatch < ApplicationRecord
   include MatchConcern
 
   belongs_to :player_1, :class_name => :Player
