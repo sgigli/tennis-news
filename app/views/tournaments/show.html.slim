@@ -1,11 +1,11 @@
 h2.text-center.mt-3.mb-5 = @tournament.name
 
-.d-flex.justify-content-center.rounded style="background-color: #009933"
-  ul.nav.nav-tabs.w-75.d-flex.justify-content-center.bg-light
+.d-flex.justify-content-center.rounded style="background-color: #{@tournament.color}; opacity: .85;"
+  ul.nav.nav-tabs.w-50.text-center.d-flex.justify-content-center.bg-light
     li.nav-item.clickable.w-50 onclick="toggle_matches('mens')"
-      a.nav-link.active#mens_tab Men's
+      a.nav-link.active#mens_tab Men's - ATP
     li.nav-item.clickable.w-50 onclick="toggle_matches('womens')"
-      a.nav-link#womens_tab Women's
+      a.nav-link#womens_tab Women's - WTA
 #mens_matches.mt-5
   - @tournament.singles_matches.atp.sort_by_round.each do |round, matches|
     h5 = round.capitalize
