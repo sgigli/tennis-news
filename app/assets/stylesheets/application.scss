@@ -54,3 +54,8 @@
 .min-height {
   min-height: 43vw;
 }
+
+#hidethis { animation: css 0s 3s forwards; }
+
+@keyframes css  { to { visibility: hidden; } }
+                    /* visibility / overflow: hidden; */

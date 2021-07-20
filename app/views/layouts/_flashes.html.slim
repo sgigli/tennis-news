@@ -1,4 +1,19 @@
 - if notice.present?
-  p.notice #{notice}
+  .alert.alert-success.fade.show.alert-dismissable.fixed-top.text-center role="alert"
+    span.notice #{notice}
+    button[type="button" class="close" data-dismiss="alert" aria-label="Close"] 
+      span[aria-hidden="true"] &times;
 - if alert.present?
-  p.alert #{alert}
+  .alert.alert-danger.fade.show.alert-dismissable.fixed-top.text-center role="alert"
+    span.alert #{alert}
+    button[type="button" class="close" data-dismiss="alert" aria-label="Close"] 
+      span[aria-hidden="true"] &times;
+
+javascript:
+  $(function() {
+    if ($(".alert-success")) {
+      setTimeout(function () {
+        $(".alert-success").alert('close')
+    }, 4000);
+    }
+  })
