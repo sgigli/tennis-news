@@ -1,13 +1,13 @@
 .row style=""
   - winner = match.winner_id == player.id
-  .col.border.border-dark
+  .col.border.border-dark.d-flex.align-items-center
     = image_tag player.country.flag.variant(resize: "20x20")
     .d-inline.ml-3.mr-2 = player.singles_stats.ranking
     = player.last_name
     - if winner
-      i.bi.bi-check.text-success
+      = render "tournaments/winner_check_icon"
   - match.sets.each do |set|
-    .col-1.border.border-dark
+    .col-1.border.border-dark.d-flex.justify-content-center
       - won_set = set[position] == set.max
       div class=("font-weight-bold" if won_set)
         = set[position]
