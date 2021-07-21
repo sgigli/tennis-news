@@ -29,6 +29,6 @@ class SearchFacade
   end
 
   def no_results?
-    !(player_results || article_results || tournament_results || singles_matches_results)
+    player_results.empty? && article_results.empty? && tournament_results.empty? && singles_matches_results.empty?
   end
 end
