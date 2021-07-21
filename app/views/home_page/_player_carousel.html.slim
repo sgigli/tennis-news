@@ -7,7 +7,7 @@ div[id=carousel_id class="carousel slide"]
       ]
         .d-flex onclick="redirect_player_show(#{player.id})"
           = image_tag player.headshot.variant(resize: "300x300"), class: "w-75"
-          div.text-right.text-white.w-25.pr-3 style="text-shadow: 1px 1px black;"
+          div.text-right.text-white.w-25.pr-3.text-outline
             h1 = "##{player.singles_stats.ranking}"
             h3 = player.last_name
   a[class="carousel-control-prev" href="##{carousel_id}" role="button" data-slide="prev"]
