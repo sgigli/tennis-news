@@ -16,10 +16,16 @@
 
 - if @search_facade.singles_matches_results.present?
   h2.mt-3.mb-4 Singles Matches
-  - @search_facade.singles_matches_results.each do |match|
-    div[style="width: 33%;"]
-      = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
-      = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
+  .row
+    - @search_facade.singles_matches_results.each_with_index do |match, index|
+      .col-4
+        .row.mx-2.my-4.bg-white
+          .col.border.border-dark.text-center.bg-secondary.text-white
+            = "#{match.tournament.name} - #{match.round.capitalize}"
+          .w-100
+          .col
+            = render "tournaments/match_grid_row", match: match, player: match.player_1, position: 0
+            = render "tournaments/match_grid_row", match: match, player: match.player_2, position: 1
 
 - if @search_facade.no_results?
   h4.mt-5.text-center Sorry, no results were found! Try re-wording your search.
